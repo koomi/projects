@@ -455,8 +455,8 @@ ifan.app = {
 				var api_host = 'http://twitter.com';
 				ifan.msg.setTwitterEnv();
 			} else {
-				var host = 'http://fanfou.com';
-				var api_host = 'http://api.fanfou.com';
+				var host = 'http://jiwai.de';
+				var api_host = 'http://api.jiwai.de';
 				this.resetURLs();
 				ifan.msg.setFanfouEnv();
 			}

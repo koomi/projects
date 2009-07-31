@@ -201,7 +201,7 @@ ifan.msg = {
 
 	_handle401: function(o){
 		if (o.status == 401){
-			errmsg = '出错了：你的用户名/密码已变更；或者需要填写验证码，请先在网页上登录饭否，然后重新登录爱饭';
+			errmsg = '出错了：你的用户名/密码已变更；或者需要填写验证码，请先在网页上登录叽歪，然后重新登录爱叽歪';
 			ifan.app.showLoginPanel(errmsg);
 			ifan.app._isLogined = false;
 			ifan.app.showWindow();

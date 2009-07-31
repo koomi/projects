@@ -64,7 +64,7 @@ ifan.Menu = function(){
 				<li id="refresh">刷新</li>\
 				<li id="logout">注销</li>\
 				<li class="sep"></li>\
-				<li id="goprofile">浏览用户的饭否主页</li>\
+				<li id="goprofile">浏览用户的叽歪主页</li>\
 			</ul>\
 		</div></body></html>');
 

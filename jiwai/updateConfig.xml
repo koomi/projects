@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <configuration xmlns="http://ns.adobe.com/air/framework/update/configuration/1.0"> 
-    <url>http://ifan.realazy.org/updateDescriptor.xml</url>
+    <url>http://ijiwai.jiwai.de/updateDescriptor.xml</url>
 	<delay>1</delay>
 	<defaultUI>
 		<dialog name="checkForUpdate" visible="true" />
