@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <application xmlns="http://ns.adobe.com/air/application/1.5">
-	<id>com.fanfou.ifan</id>
-	<filename>爱饭</filename>
-	<name>爱饭</name>
-	<description>爱饭专用于饭否，居家旅行话痨必备。</description>
+	<id>de.jiwai.ijiwai</id>
+	<filename>爱叽歪</filename>
+	<name>爱叽歪</name>
+	<description>爱叽歪专用于叽歪，居家旅行话痨必备。</description>
 	<version>1.3</version>
 	<customUpdateUI>true</customUpdateUI>
-	<installFolder>iFan</installFolder> 
+	<installFolder>iJiwai</installFolder> 
 	<initialWindow>
 		<content>main.html</content>
-		<title>爱饭</title>
+		<title>爱叽歪</title>
 		<systemChrome>none</systemChrome>
 		<transparent>true</transparent>
 		<visible>true</visible>
