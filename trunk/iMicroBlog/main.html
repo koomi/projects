@@ -114,6 +114,16 @@
 			<form id="login-form">
 				<p id="login-error" class="error"></p>
 				<p>请使用饭否的注册信息进行登录</p>
+				<p>选择服务：
+					<select id="option-server_select">
+						<option value="twitter">推特(Twitter)</option>
+						<option value="fanfou">饭否(Fanfou)</option>
+						<option value="jiwai">叽歪(Jiwai)</option>
+						<option value="digu">嘀咕(Digu)</option>
+						<option value="zuosa">做啥(Zuosa)</option>
+						<option value="leihou" disabled>雷猴(Leihou)</option>
+					</select>
+				</p>
 				<p class="login-label"><span>Email</span><input type="text" id="username" /></p>
 				<p class="login-label"><span>密 码</span><input type="password" id="password" /></p>
 				<p class="act"><span><label for="passrem" id="passrem-label"><input type="checkbox" id="passrem" /> 自动登录</label></span><button type="submit" id="login-panle-submit">登录</button></p>

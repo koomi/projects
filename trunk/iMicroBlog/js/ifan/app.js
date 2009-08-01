@@ -406,6 +406,7 @@ ifan.app = {
 
 	setupLogin: function(){
 		var frm = $D.get('login-form'),
+			srv = frm['option-server_select'],
 			usr = frm['username'],
 			pwd = frm['password'],
 			pwdrem = frm['passrem'],
@@ -450,6 +451,7 @@ ifan.app = {
 			ifan.prefs.setEnc('username', username);
 			ifan.prefs.setEnc('password', password);
 			ifan.prefs.set('passrem', pwdrem.checked);
+			/*
 			if (this._is_twitter){
 				var host = 'http://twitter.com';
 				var api_host = 'http://twitter.com';
@@ -460,6 +462,39 @@ ifan.app = {
 				this.resetURLs();
 				ifan.msg.setFanfouEnv();
 			}
+			*/
+			if (this._is_twitter || srv.value == 'twitter'){
+				var host = 'http://twitter.com';
+				var api_host = 'http://twitter.com';
+				ifan.msg.setTwitterEnv();
+			} else if(srv.value == 'fanfou') {
+				var host = 'http://fanfou.com';
+				var api_host = 'http://api.fanfou.com';
+				this.resetURLs();
+				ifan.msg.setFanfouEnv();
+			} else if(srv.value == 'jiwai') {
+				var host = 'http://jiwai.de';
+				var api_host = 'http://api.jiwai.de';
+				this.resetURLs();
+				ifan.msg.setFanfouEnv();
+			} else if(srv.value == 'digu') {
+				var host = 'http://digu.com';
+				var api_host = 'http://api.digu.com';
+				this.resetURLs();
+				ifan.msg.setFanfouEnv();
+			} else if(srv.value == 'zuosa') {
+				var host = 'http://zuosa.com';
+				var api_host = 'http://api.zuosa.com';
+				this.resetURLs();
+				ifan.msg.setFanfouEnv();
+			} else if(srv.value == 'leihou') {
+				var host = 'http://leihou.com';
+				var api_host = 'http://api.leihou.com';
+				this.resetURLs();
+				ifan.msg.setFanfouEnv();
+			}
+			//alert(srv.value);
+			
 			ifan.prefs.set('host', host);
 			ifan.prefs.set('api_host', api_host);
 			this.resetURLs();
