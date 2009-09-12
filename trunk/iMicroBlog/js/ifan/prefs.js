@@ -129,9 +129,11 @@ ifan.prefsdata_default = {
 	'postarea_height':72,
 	'update_interval': 120000,
 	'notification_hide_time': 10000,
-	'check_update_at_appstart': true,
+	'check_update_at_appstart': false,
 	'refan_format': '转自{%某人%}：{%消息%}',
-	'shorten-url-api': 'bit.ly'
+	'shorten-url-api': 'bit.ly',
+	'host_twitter': 'http://dabr.co.uk/user',
+	'api_twitter': 'http://nest.appspot.com/api'
 }
 
 if (air.NativeApplication.supportsSystemTrayIcon){

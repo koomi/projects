@@ -207,7 +207,14 @@ ifan.app = {
 					var value = this.value;
 					if (regexp.test(value)) ifan.prefs.set(key, value);
 				});
+			} else if (key == 'host_twitter') {
+				var val = ifan.prefs.get(key);
+				el.value = val;
+			} else if (key == 'api_twitter') {
+				var val = ifan.prefs.get(key);
+				el.value = val;
 			}
+			//alert(val);
 		});
 	},
 
@@ -464,8 +471,10 @@ ifan.app = {
 			}
 			*/
 			if (this._is_twitter || srv.value == 'twitter'){
-				var host = 'http://twitter.com';
-				var api_host = 'http://twitter.com';
+				//var host = 'http://dabr.co.uk';
+				//var api_host = 'http://nest.appspot.com/api';
+				var host = ifan.prefs.get('host_twitter');
+				var api_host = ifan.prefs.get('api_twitter');
 				ifan.msg.setTwitterEnv();
 			} else if(srv.value == 'fanfou') {
 				var host = 'http://fanfou.com';
