@@ -498,7 +498,7 @@ ifan.app = {
 				ifan.msg.setFanfouEnv();
 			} else if(srv.value == 'leihou') {
 				var host = 'http://leihou.com';
-				var api_host = 'http://api.leihou.com';
+				var api_host = 'http://leihou.com';
 				this.resetURLs();
 				ifan.msg.setFanfouEnv();
 			}
